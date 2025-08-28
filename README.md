@@ -173,20 +173,26 @@ Click on Windows Firewall Defender Properties.
 
 
 <p>
-
-  Next go to DNS server > DNS server switch to custom then paste the IP address.
+  Next go to DNS server > DNS server switch to custom then paste the IP address. Paste dc-1 private IP address and save.
   <img width="1492" height="894" alt="AD21" src="https://github.com/user-attachments/assets/1d579c77-5e8b-4787-a5f3-347a222d3f94" />
 <img width="1493" height="867" alt="AD22" src="https://github.com/user-attachments/assets/0886ac62-ebf8-4c3b-97cf-a94b49df5e33" />
-
-
-</p>
-<br />
+</p><br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+  Now from the azure portal I will restart Client-1.
+  Go back to virtual machine.
+  Check the Client-1 box and restart.
+<img width="1890" height="886" alt="AD23" src="https://github.com/user-attachments/assets/fd3665cf-4a11-4178-b1f4-5d9d3dce22c0" />
+</p><br />
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Now log into client-1 in azure
+  Copy the public IP address
+  Go to remote desktop
+  Paste client-1 public IP address 
+  User name: labuser and Cyberlab123!
+  <img width="988" height="870" alt="AD24" src="https://github.com/user-attachments/assets/a365d62c-a319-49f5-b887-1e0880a87b89" />
 </p>
 <br />
 
