@@ -28,21 +28,28 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create one virtual machine running windows server this is going to be our domain controller.
 - Create another virtual machine running windows 10 this will be the client that will join the domain.
-- Step 3
-- Step 4
+- Set up dns IP address in client NIC to same address as the Domain controller.
+- 
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Open Azure and create a resource group.
+<img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Name your resource group and select the appropriate region.
+  Preview and create.
+<img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Next I will create a virtual network.
+<img width="1469" height="912" alt="AD3" src="https://github.com/user-attachments/assets/ae0f26c7-f27b-49cd-b895-c77341a6c5a0" />
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
