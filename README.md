@@ -49,7 +49,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 Next I will create a virtual network and create virtual network name. 
 Review and Create
-<img width="1497" height="891" alt="AD3" src="https://github.com/user-attachments/assets/1ca012ff-bf0b-4059-a2c8-ed956cbf91c1" />
+<img width="1490" height="889" alt="AD3" src="https://github.com/user-attachments/assets/7f3b0e98-5db9-4435-a4be-ce723b991dad" />
+
 
 
 </p>
