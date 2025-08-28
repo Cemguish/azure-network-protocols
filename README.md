@@ -150,12 +150,19 @@ Once you confirm you are in the domain controller.
   Once you are at the Firewall Defender menu. 
   I will be turning off the firewall for the purpose of this project.
 <img width="1051" height="787" alt="image" src="https://github.com/user-attachments/assets/7b791be8-9f90-4b26-9858-e927aa684106" />
+</p><br />
 
-</p>
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Click on Windows Firewall Defender Properties.
+  Next go to firewall state turn it to off.
+  Apply then ok
+  <img width="1051" height="787" alt="AD19" src="https://github.com/user-attachments/assets/68e382b2-e48b-40e4-9c3b-eded067b71b4" />
+</p><br />
+
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
