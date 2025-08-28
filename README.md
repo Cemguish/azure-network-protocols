@@ -157,13 +157,16 @@ Once you confirm you are in the domain controller.
 
 <p>
 Click on Windows Firewall Defender Properties.
-  Next go to firewall state turn it to off.
+  Next go to firewall state turn it to off. 
+  Do this for the following tabs domain and the private profiles tab.
   Apply then ok
   <img width="1051" height="787" alt="AD19" src="https://github.com/user-attachments/assets/68e382b2-e48b-40e4-9c3b-eded067b71b4" />
 </p><br />
 
 
 <p>
+  Now I will set client-1 DNS settings to dc-1 private IP address.
+  Go to azure and get dc-1 private IP address.
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
