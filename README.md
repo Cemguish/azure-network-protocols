@@ -120,25 +120,37 @@ Go back to azure virtual machine then copy dc-1 public IP address
 
 
 <p>
-  Open remote desktop and login.
+  Open remote desktop paste dc-1 public IP address and the password you created and login.
   <img width="667" height="826" alt="AD15" src="https://github.com/user-attachments/assets/69eafc09-b823-477d-8c17-5a652e63a884" />
 </p><br />
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+You should now be logged in to the Domain controller.
+  <img width="1907" height="959" alt="AD16" src="https://github.com/user-attachments/assets/174aca99-a275-4b89-b87c-a80edb39e940" />
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Side note to check to see if you are in the domain controller.
+  Right click on start menu > select system.
+  The about screen should popup.
+  Check windows specifications - Edition it should say "Windows Server 2022 Datacenter Azure Edition"
+  If you see this your are on the right path.
+  If you don't see it logout then login again.
+  Close window 
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Once you confirm you are in the domain controller.
+  Right click the start menu > Run this should take you to the Firewall Defender menu.
+  <img width="1808" height="1010" alt="AD18" src="https://github.com/user-attachments/assets/502ac808-c2ba-4c1b-bbb9-c726dfecd351" />
+</p><br />
+
+<p>
+  Once you are at the Firewall Defender menu. 
+  I will be turning off the firewall for the purpose of this project.
+<img width="1051" height="787" alt="image" src="https://github.com/user-attachments/assets/7b791be8-9f90-4b26-9858-e927aa684106" />
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
