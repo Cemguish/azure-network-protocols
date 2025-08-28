@@ -196,7 +196,7 @@ Click on Windows Firewall Defender Properties.
 </p><br />
 
 <p>
-  Now I will attempt to ping DC-1’s private IP address.
+  Now I will attempt to ping dc-1’s private IP address.
   Go back to azure > virtual machine > click on dc-1 
   Navigate to private IP address
   Copy it 
@@ -207,9 +207,12 @@ Click on Windows Firewall Defender Properties.
 
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Open powershell Type ping and dc-1’s private IP address enter
+  It should ping.
+  <img width="913" height="779" alt="AD26" src="https://github.com/user-attachments/assets/577d3baa-a344-419e-a68e-73717427b41b" /> 
+</p><br />
+
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
