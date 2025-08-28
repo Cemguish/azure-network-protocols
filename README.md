@@ -152,9 +152,6 @@ Once you confirm you are in the domain controller.
 <img width="1051" height="787" alt="image" src="https://github.com/user-attachments/assets/7b791be8-9f90-4b26-9858-e927aa684106" />
 </p><br />
 
-
-
-
 <p>
 Click on Windows Firewall Defender Properties.
   Next go to firewall state turn it to off. 
@@ -166,11 +163,22 @@ Click on Windows Firewall Defender Properties.
 
 <p>
   Now I will set client-1 DNS settings to dc-1 private IP address.
-  Go to azure and get dc-1 private IP address.
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Go to azure and get dc-1 private IP address 
+  Copy it.
+  Go to click Networking > Networking settings > IP configuration Client-1 Network interface 
+
+<img width="1877" height="921" alt="AD20" src="https://github.com/user-attachments/assets/d2cf0cd7-48f7-45be-b571-a63e349a5354" />
 </p>
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+  Next go to DNS server > DNS server switch to custom then paste the IP address.
+  <img width="1492" height="894" alt="AD21" src="https://github.com/user-attachments/assets/1d579c77-5e8b-4787-a5f3-347a222d3f94" />
+<img width="1493" height="867" alt="AD22" src="https://github.com/user-attachments/assets/0886ac62-ebf8-4c3b-97cf-a94b49df5e33" />
+
+
 </p>
 <br />
 
