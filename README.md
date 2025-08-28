@@ -81,34 +81,49 @@ Then Review and create.
    Fill in the necessary information like Resource group, Virtual machine name Client-1, Region, Availability zone, Image Windows 10 pro, Size, Username, Password.
   Check the licensing box then 
 <img width="799" height="927" alt="AD8" src="https://github.com/user-attachments/assets/74145e2e-8664-4c7c-8f49-309e97bbf3dd" />
-<img width="1185" height="923" alt="AD9" src="https://github.com/user-attachments/assets/0a596991-7ddd-4ccd-a7f2-779500b15b4d" />
 </p><br />
 
 <p>
 Next go to Next: Disk > Next: Networking > 
 Make sure the Virtual network is set to your virtual network name you created previously.
-Then Review and create. 
-</p>
-<br />
+Then Review and create. When this is successfully deployed go back to virtual machine.
+  <img width="1185" height="923" alt="AD9" src="https://github.com/user-attachments/assets/0a596991-7ddd-4ccd-a7f2-779500b15b4d" />
+</p><br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Now in virtual machine I will set the domain controller NIC IP address to static.
+<img width="1888" height="864" alt="AD10" src="https://github.com/user-attachments/assets/295f7a0d-55ac-4ec4-b1ec-096e3305869c" />
+
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+   Click on dc-1 > Networking > Network settings > Locate and copy the dc-1 private IP address. 
+  Now click on the Network interface/IP configuration box.
+  
+  <img width="1885" height="911" alt="AD12" src="https://github.com/user-attachments/assets/5e8b1386-048f-47a8-847a-1edbee62db3a" />
+</p><br />
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Navigate to and click on ipconfig1.
+  Go to Private IP address settings > Allocation.
+  Select Static and save. Now the address should be static
+<img width="1479" height="941" alt="AD13" src="https://github.com/user-attachments/assets/d145da61-1fad-4c82-9099-19d76864c4c4" />
 </p>
-<br />
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Now I will log into the domain controller.
+Go back to azure virtual machine then copy dc-1 public IP address
+<img width="1909" height="779" alt="AD14" src="https://github.com/user-attachments/assets/8f8e2b35-c557-4e35-a7db-0d8eb68649e2" />
+</p><br />
+
+
+
+<p>
+  Open remote desktop and login.
+  <img width="667" height="826" alt="AD15" src="https://github.com/user-attachments/assets/69eafc09-b823-477d-8c17-5a652e63a884" />
+</p><br />
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
