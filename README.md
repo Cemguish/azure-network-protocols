@@ -70,7 +70,10 @@ Review and Create
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next go to Next: Disk > Next: Networking > 
+  
+  <img width="1455" height="921" alt="AD7" src="https://github.com/user-attachments/assets/1b1cb2b0-7dcd-44ef-964e-98d9a8a02ca0" />
+
 </p>
 <br />
 <p>
