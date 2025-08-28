@@ -193,12 +193,19 @@ Click on Windows Firewall Defender Properties.
   Paste client-1 public IP address 
   User name: labuser and Cyberlab123!
   <img width="988" height="870" alt="AD24" src="https://github.com/user-attachments/assets/a365d62c-a319-49f5-b887-1e0880a87b89" />
-</p>
-<br />
+</p><br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+  Now I will attempt to ping DC-1’s private IP address.
+  Go back to azure > virtual machine > click on dc-1 
+  Navigate to private IP address
+  Copy it 
+  Go back to Client-1 session and open powershell.
+<img width="1119" height="914" alt="AD25" src="https://github.com/user-attachments/assets/6691bd7e-23fe-4c30-940b-a991f9457481" />
+</p><br />
+
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
