@@ -271,7 +271,6 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
   <li>Then install at prerequisites check screen.</li>
   <li>After installation the session window automatically restart.</li>
   <li>Now The server was successfully configured as a domain controller.</li>
-
 </p><br />
 <img width="1935" height="1043" alt="Add7" src="https://github.com/user-attachments/assets/292e6d21-36ab-47d9-8fe7-4ed62ffdc395" />
 </ul><br />
@@ -280,10 +279,21 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Next log into dc-1 as a domain user.
+  User name should be (mydomain.com\labuser) for example or whatever you user name you used and your password.
+  Now login
+<img width="1274" height="1015" alt="Add8" src="https://github.com/user-attachments/assets/4a453382-5999-4f15-bdcd-8d21419e5d0b" />
 </p>
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now I will Create a Domain Admin user within the domain.
+Open Active Directory users and computers and create an organizational unit called _EMPLOYEES.
+Go to start click Administrative Tools > Active Directory users and computers 
+I will create organizational unit called _EMPLOYEES.
+Click mydomain.com dropdown menu > users >
+  <img width="1694" height="954" alt="Add9" src="https://github.com/user-attachments/assets/ae4c0156-8093-4ce7-8791-fdf33407de31" />
 </p>
 <br />
 
