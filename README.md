@@ -292,13 +292,20 @@ Now I will Create a Domain Admin user within the domain.
 Open Active Directory users and computers and create an organizational unit called _EMPLOYEES.
 Go to start click Administrative Tools > Active Directory users and computers 
 I will create organizational unit called _EMPLOYEES.
-Click mydomain.com dropdown menu > users >
+Click mydomain.com dropdown menu > users > Right click on mydomain.com > New organizational unit > Name _EMPLOYEES > Then click ok
+Now I will create another one called _ADMIN 
+Duplicate previous steps.
+  When completed I will create a new  user/employee.
   <img width="1694" height="954" alt="Add9" src="https://github.com/user-attachments/assets/ae4c0156-8093-4ce7-8791-fdf33407de31" />
 </p>
 <br />
 
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Now I will create a new  user/employee. 
+  Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
+Go to admins folder right click >  new > User 
+<img width="1682" height="943" alt="Add10" src="https://github.com/user-attachments/assets/3b891aa9-c3f2-44a7-b0a4-ac22783c9445" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
