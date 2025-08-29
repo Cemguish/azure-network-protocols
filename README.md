@@ -262,12 +262,18 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
 </p>
 
 <p>
-  This will bring up the deployment configuration menu.
-  Select Add a new forest.
+  <ul>
+  <h4>This will bring up the deployment configuration menu.</h4>
+  <li>Select Add a new forest.</li>
+  <li>For the root domain name type mydomain.com </li>
+  <li>Click next and Enter you password and confirm.</li>
+  <li>Click next.</li>
+  <li>Then install at prerequisites check screen.</li>
+  <li>After installation the session window automatically restart.</li>
+  <li>Now The server was successfully configured as a domain controller.</li>
 <img width="1935" height="1043" alt="Add7" src="https://github.com/user-attachments/assets/292e6d21-36ab-47d9-8fe7-4ed62ffdc395" />
 </p><br />
-
-
+</ul>
 
 
 
