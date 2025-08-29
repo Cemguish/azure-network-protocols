@@ -273,7 +273,7 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
   <li>Now The server was successfully configured as a domain controller.</li>
 <img width="1935" height="1043" alt="Add7" src="https://github.com/user-attachments/assets/292e6d21-36ab-47d9-8fe7-4ed62ffdc395" />
 </p><br />
-</ul>
+</ul><br />
 
 
 
