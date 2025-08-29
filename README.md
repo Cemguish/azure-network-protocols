@@ -222,24 +222,19 @@ Open powershell Type ping and dc-1’s private IP address enter
 <p>
 Next , I will install Active Directory.
 Go to azure copy the public IP address for dc-1.
-Open Remote desktop paste the dc-1 public IP address.
 <img width="1869" height="625" alt="ADD1" src="https://github.com/user-attachments/assets/7ee77e09-e035-4507-b18f-1b525a349964" />
 </p><br />
 
-
-
-
-
-
+<p>
+  Open Remote desktop paste the dc-1 public IP address.
+<img width="802" height="935" alt="Add2" src="https://github.com/user-attachments/assets/c10e0d33-e3a6-4138-b477-34c00e045e50" />
+</p><br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+When you're in dc-1 go to the start menu and sroll up to server manager.
+  <img width="1853" height="1041" alt="Add3" src="https://github.com/user-attachments/assets/a8c5481d-7cfd-4d49-b444-71f482899493" />
+</p><br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
