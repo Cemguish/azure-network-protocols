@@ -237,16 +237,26 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
 </p><br />
 
 <p>
-  
+  Now I will set up active directory.
+  Go to add roles and features.
+  Click next to all.
 <img width="1911" height="1030" alt="Add4" src="https://github.com/user-attachments/assets/300c4071-cc9e-435d-99d6-17751d255917" />
+</p>
 
-</p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+  When you get to Select server role check the Active directory services box.
+  Click Add features button.
+  Then next check the Restart if destination server automatically if required box and install.
+  After the install close
+<img width="1916" height="1038" alt="add6" src="https://github.com/user-attachments/assets/ed92c5c1-4ab3-488e-971d-5d571c719719" />
+</p><br />
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Now I will promote dc-1 as an active domain controller: Also known as a forest.
+  Go back to the domain controller dc-1.
+  Navigate to the right locate the flag
+<img width="1911" height="1030" alt="Add4" src="https://github.com/user-attachments/assets/300c4071-cc9e-435d-99d6-17751d255917" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
