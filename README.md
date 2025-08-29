@@ -303,12 +303,15 @@ Duplicate previous steps.
 
 <p>
   Now I will create a new  user/employee. 
-  Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
-Go to admins folder right click >  new > User 
 <img width="1682" height="943" alt="Add10" src="https://github.com/user-attachments/assets/3b891aa9-c3f2-44a7-b0a4-ac22783c9445" />
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go to admins folder right click >  new > User. 
+Fill in the necessary field. 
+Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!.
+<img width="1671" height="954" alt="Add11" src="https://github.com/user-attachments/assets/7cb51008-8b2b-4e1d-9e49-c44f09b1b77e" />
+
 </p>
 <br />
 <p>
