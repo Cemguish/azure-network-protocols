@@ -304,8 +304,11 @@ Duplicate previous steps.
 <p>
 Now I will create a new  user/employee. 
 Go to admins folder right click >  new > User. 
-Fill in the necessary field. 
+Fill in the necessary fields. 
 Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!.
+Optional, Uncheck user must change password at next logon.
+For this project I wil check the password never expires.
+Hit next and finish.
 <img width="1671" height="954" alt="Add11" src="https://github.com/user-attachments/assets/7cb51008-8b2b-4e1d-9e49-c44f09b1b77e" />
 </p>
 
@@ -314,8 +317,12 @@ Create a new employee for example named “Jane Doe” (same password) with the 
 
 
 <p>
-
-
+Now I will add jane_admin to the “Domain Admins” Security Group
+Right click jane doe > Properties > Member of Tab > Add 
+Type in the object name to select box. 
+Domain Admins > Click check names box > Click ok > Apply > Ok
+Now account is an actual domain admin.
+<img width="1653" height="944" alt="Add12" src="https://github.com/user-attachments/assets/b4c12836-1074-4c22-ad80-fbed6a7e6539" />
 </p><br />
 
 
@@ -323,8 +330,17 @@ Create a new employee for example named “Jane Doe” (same password) with the 
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Now logout an close the dc-1 connection.
+  Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
+  To log out right click > Run > Type logoff > Enter
+  Next, log back into dc-1 as jane admin.
+  Go to azure get dc-1 public IP address and log in again.
+  I will be using this account from this point on.
+<img width="1281" height="1033" alt="Add13" src="https://github.com/user-attachments/assets/073da3d6-b9a9-4cd9-8f4c-245d90971071" />
+
 </p>
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
