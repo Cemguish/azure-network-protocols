@@ -342,15 +342,33 @@ Now account is an actual domain admin.
 
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+ Now I will login to client-1 
+  Go back to azure get client-1 public IP address
+  Go to remote desktop.
+  Once logged in Right click on start menu > System > Rename this PC Advanced.
+  Under the computer tab > change > in this box I will join this to the domain. Type in mydomain.com > click ok 
+  At the Computer Name > Domain Changes pop up in put User name and password click ok. 
+  The pop up will give a prop to restart.
+  When it comes back up it will be a member of the domain
+  <img width="1327" height="1020" alt="Add14" src="https://github.com/user-attachments/assets/7621f5e1-e32a-4c39-86fc-3b16ac06d466" />
+  <img width="1411" height="1016" alt="Add15" src="https://github.com/user-attachments/assets/03177c91-fb0c-4def-88ec-405d2468e8f2" />
+</p><br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Now go back to dc-1 
+  Right click on start menu
+  Type in active directory > Active Directory User and Computers > mydomain > client-1 > double click to verify
+  Login to the Domain Controller and verify Client-1 shows up in ADUC
+
+<img width="1003" height="943" alt="Add16" src="https://github.com/user-attachments/assets/27d41b0f-81f5-42b1-86b3-685fff7b69de" />
 </p>
+
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a new Organizatiional Unit  named “_CLIENTS” and drag Client-1 into there
 </p>
 <br />
 
