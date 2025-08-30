@@ -377,14 +377,27 @@ Create a new Organizatiional Unit  named “_CLIENTS” and drag Client-1 into t
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-
+Next To Do on Monday
 
 
 <p>
   Create a bunch of additional users and attempt to log into client-1 with one of the users
-</p>
-<br />
+  Log into Client-1 as mydomain.com\jane_admin
+Open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
+</p><br />
 <p>
+  Login to DC-1 as jane_admin
+Open PowerShell_ise as an administrator
+Create a new File and paste the contents of the script into it
+Run the script and observe the accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
