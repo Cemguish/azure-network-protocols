@@ -1,4 +1,4 @@
-# Deploy-Active Directory-PowerShell & Group Policy
+<img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/d0cfcc02-c2b8-4af7-b95b-9f70baffa69c" /># Deploy-Active Directory-PowerShell & Group Policy
 
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
@@ -381,47 +381,77 @@ Next To Do on Monday
 
 
 <p>
-  Create a bunch of additional users and attempt to log into client-1 with one of the users
-  Log into Client-1 as mydomain.com\jane_admin
-Open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+Open remote desktop log into Client-1 as mydomain.com\jane_admin.
+Right click on start menu > Go to system > properties > Click Remote Desktop
+Scroll down to user accounts and click on select users that can remotely access this PC.
+Then click add > go to Enter the object names to select box
+Type in domain users then check names > click ok and click ok again
+Now all domain admins by default should be able to log into the computer.
+<img width="1220" height="1039" alt="AD28" src="https://github.com/user-attachments/assets/609acdab-a246-4494-a95b-368297c8b5b8" />
+<img width="1236" height="983" alt="AD29" src="https://github.com/user-attachments/assets/4046163c-908f-4405-9fd4-61f974d18a2b" />
 
 </p><br />
 <p>
-  Login to DC-1 as jane_admin
-Open PowerShell_ise as an administrator
-Create a new File and paste the contents of the script into it
-Run the script and observe the accounts being created
-When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
-attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+Next, I will create a bunch of additional users and attempt to log into client-1 with one of the users
+Go to back azure get the public IP address go to remote desktop then login to DC-1 as jane_admin
+Go to the start menu > type in PowerShell_ise > Right click > Run as an administrator.
+Next, Scroll to the script downmenu.
+Click the arrow this should split the screen horizontally. ( top half should be white) This is where you will paste the contents of the script.
+I am using a pre-generated script from Github
+  Go to Github Navigate to the page the script is on. Then copy Raw.
+<img width="1098" height="966" alt="AD30" src="https://github.com/user-attachments/assets/1503987f-ae39-4e72-a8f8-773c686a4285" />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now Create a new file on the desktop> Control =S save to desktop.
+Next copy and paste script in Powershell.
+Go to start menu open Active Directory. Right click > Run > Type in dsa.msc.
+This opens Active Directory users and Computers.
+Go back to Active Directory and run script.
+<img width="1919" height="1038" alt="AD31" src="https://github.com/user-attachments/assets/70759c6a-469a-4a61-afc5-ebd471a29c2a" />
 </p>
+
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   This will create multiple users.
+  When finished, open Active Directory and observe the accounts in the appropriate Organizational Unit　(_EMPLOYEES)
+<img width="1904" height="997" alt="AD32" src="https://github.com/user-attachments/assets/225cf5f9-9380-4dfa-8df5-ea7dad3a0af1" /> 
+</p><br />
+
+
+<p>
+  Now go to Active Directory Users and computers.
+  Click on mydomain.com 
+  Scroll down to _EMPLOYEES > right click > then refresh
+There should be multiple users available.
+  <img width="1383" height="990" alt="AD33" src="https://github.com/user-attachments/assets/7b7fcba2-d183-402a-965a-b380c64b792f" />
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  I will select a random user and attempt to log into Client-1 with one of the accounts.
+  Go to client-1 logout then, log back in using one of the credentials selected from the _EMPLOYEES.
+<img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/fa745688-2d8f-435f-9816-faf5ffe7216a" />
+
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+   Go to remote desktop 
+  Change the user name after forward slash to your select user from the _EMPLOYEES list and paste then log in.
+  Password be (Password1)
+<img width="1590" height="1065" alt="image" src="https://github.com/user-attachments/assets/c531c30a-7bf1-4758-9f6d-356cd898e290" />
+
+</p><br />
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Go to the Start menu > bring up CMD line then look at the user.
+  Then go to this PC > C.drive > Users you should see the users profiles
+  It should be the user you selected from the _EMPLOYEES list in Active Directory users and Computers.
+
+<img width="1153" height="993" alt="AD37" src="https://github.com/user-attachments/assets/f68c1c90-ea07-4e9f-98f8-ab8b40c2d4fc" />
+</p> 
+
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
