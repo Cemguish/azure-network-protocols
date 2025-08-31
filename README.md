@@ -1,5 +1,3 @@
-<img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/d0cfcc02-c2b8-4af7-b95b-9f70baffa69c" /># Deploy-Active Directory-PowerShell & Group Policy
-
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
@@ -447,8 +445,7 @@ There should be multiple users available.
   Go to the Start menu > bring up CMD line then look at the user.
   Then go to this PC > C.drive > Users you should see the users profiles
   It should be the user you selected from the _EMPLOYEES list in Active Directory users and Computers.
-
-<img width="1153" height="993" alt="AD37" src="https://github.com/user-attachments/assets/f68c1c90-ea07-4e9f-98f8-ab8b40c2d4fc" />
+<img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/d0cfcc02-c2b8-4af7-b95b-9f70baffa69c" /># Deploy-Active Directory-PowerShell & Group Policy
 </p> 
 
 
