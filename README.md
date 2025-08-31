@@ -451,11 +451,45 @@ There should be multiple users available.
 
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Now we are going to dealing with Account Lockouts.
+  Set up lock out policy in Active Directory. I will use group policy to configure it.
+  In dc-1 go to the start menu > Right click > Run > Type gpmc.msc enter
+  This will bring up Group Policy Management Console.
+  Right click on Default Domain > Edit > computer configuration > window settings > Security settings > Account Policies > Account Lockout policy
+  To Set lock out duration to 30 minutes. Click ok
+  Next, Set Account threshold to 5 log in attempt fails.
+  After these settings I will test it out.
+<img width="1545" height="1039" alt="AD41" src="https://github.com/user-attachments/assets/aa276d85-c372-450c-82c5-05805769a2ba" />
+<img width="1698" height="1039" alt="AD42" src="https://github.com/user-attachments/assets/8d4add5c-be22-4457-8205-3da407222d3b" />
+
+
+</p>
+<p>
+  Go to Default Domain Policy > Setting
+  You should your the changes you made in your settings.
+  
+<img width="1804" height="1042" alt="AD43" src="https://github.com/user-attachments/assets/8c3ae581-6986-49d7-91fe-345cced524e1" />
+<img width="1666" height="1020" alt="image" src="https://github.com/user-attachments/assets/1399add8-70fe-40df-a509-d324dfd7da34" />
+
+</p>
+Waiting 90 minutes will continue on monday
+Now lets login to client-1
+
+
+<p>
+
+Login to dc-1 > Open Active Directory users and Computer.
+Go to mydomain > _EMPLOYEES > Select employee from the list. I Will select User bar.rir and Password is (Password1).
+Go back Azure get client-1 public IP address > Open remote desktop and login using a bad password (5 times) until user is locked out. 
+  <img width="1294" height="932" alt="AD40" src="https://github.com/user-attachments/assets/567e1089-e039-4f5c-9820-908efd6cd80c" />
 </p>
 <br />
 
+
 <p>
+
+  Go back to Active Directory 
+  Double click on the user you previously selected User(bar.rir) > Account > 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
