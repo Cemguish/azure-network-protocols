@@ -422,15 +422,13 @@ Go back to Active Directory and run script.
   Scroll down to _EMPLOYEES > right click > then refresh
 There should be multiple users available.
   <img width="1383" height="990" alt="AD33" src="https://github.com/user-attachments/assets/7b7fcba2-d183-402a-965a-b380c64b792f" />
-</p>
-<br />
+</p><br />
 
 <p>
   I will select a random user and attempt to log into Client-1 with one of the accounts.
   Go to client-1 logout then, log back in using one of the credentials selected from the _EMPLOYEES.
 <img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/fa745688-2d8f-435f-9816-faf5ffe7216a" />
-
-</p>
+</p><br />
 
 
 
@@ -439,17 +437,19 @@ There should be multiple users available.
   Change the user name after forward slash to your select user from the _EMPLOYEES list and paste then log in.
   Password be (Password1)
 <img width="1590" height="1065" alt="image" src="https://github.com/user-attachments/assets/c531c30a-7bf1-4758-9f6d-356cd898e290" />
-
 </p><br />
+
+
+
 <p>
   Go to the Start menu > bring up CMD line then look at the user.
   Then go to this PC > C.drive > Users you should see the users profiles
   It should be the user you selected from the _EMPLOYEES list in Active Directory users and Computers.
-<img width="1229" height="1039" alt="AD34" src="https://github.com/user-attachments/assets/d0cfcc02-c2b8-4af7-b95b-9f70baffa69c" /># Deploy-Active Directory-PowerShell & Group Policy
+<img width="1677" height="990" alt="AD38" src="https://github.com/user-attachments/assets/8ec7540f-f39c-424e-95ec-9328e314fd66" />
+
 </p> 
 
 
-</p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
