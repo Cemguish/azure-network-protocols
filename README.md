@@ -461,23 +461,17 @@ There should be multiple users available.
   After these settings I will test it out.
 <img width="1545" height="1039" alt="AD41" src="https://github.com/user-attachments/assets/aa276d85-c372-450c-82c5-05805769a2ba" />
 <img width="1698" height="1039" alt="AD42" src="https://github.com/user-attachments/assets/8d4add5c-be22-4457-8205-3da407222d3b" />
-
-
 </p>
+
+
 <p>
   Go to Default Domain Policy > Setting
   You should your the changes you made in your settings.
-  
 <img width="1804" height="1042" alt="AD43" src="https://github.com/user-attachments/assets/8c3ae581-6986-49d7-91fe-345cced524e1" />
 <img width="1666" height="1020" alt="image" src="https://github.com/user-attachments/assets/1399add8-70fe-40df-a509-d324dfd7da34" />
-
 </p>
-Waiting 90 minutes will continue on monday
-Now lets login to client-1
-
 
 <p>
-
 Login to dc-1 > Open Active Directory users and Computer.
 Go to mydomain > _EMPLOYEES > Select employee from the list. I Will select User bar.rir and Password is (Password1).
 Go back Azure get client-1 public IP address > Open remote desktop and login using a bad password (5 times) until user is locked out. 
@@ -485,21 +479,56 @@ Go back Azure get client-1 public IP address > Open remote desktop and login usi
 </p>
 <br />
 
-
 <p>
+Now lets login to client-1 with wrong password 5 times.
+Once locked go back to the domain controller > Right click > on mydomain > In the name field Type in the name of locked account and find.
+When the account pops up > double click on the name > Account > To unlock account check the box > Apply > ok
+<img width="1152" height="1038" alt="AD45" src="https://github.com/user-attachments/assets/be0c21f4-dc32-4f27-aef7-4b5e9755a592" />
+<p/>
+  
+<p>
+Go back to client-1 and Attempt to log in.
+  You should be able to log in 
+  Double check user name in powershell
+<img width="1579" height="1026" alt="AD48" src="https://github.com/user-attachments/assets/1ef64418-d90b-41c5-b568-903bc0469a3b" />
+  <img width="1686" height="999" alt="AD49" src="https://github.com/user-attachments/assets/00c78f38-e55d-4401-8375-0c266997efbc" />
 
-  Go back to Active Directory 
-  Double click on the user you previously selected User(bar.rir) > Account > 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now I will demonstrate how to reset password.
+Go back to dc-1
+Once locked go back to the domain controller > Right click > on mydomain > In the name field type in the name of the user account you need to reset.
+When the account pops up > right click > scroll down to reset and select it > You will be prompted to reset password >  In put new password then ok > This should reset the account.
+<img width="1720" height="890" alt="AD50" src="https://github.com/user-attachments/assets/ec8509dd-73db-4053-82eb-db5a65c3af68" />
+</p>
+
+
+
+<p>
+Now I will demonstrate how to disable an account.
+  Go back to mydomain.com > Click Right > Find > Type in the the user account you what to disable > Find now
+  Scroll down to the user > Right Click > Disable the account.
+  Now account should be disabled.
+  To re-enable follow the same steps and click enable.
+  <img width="1730" height="982" alt="AD51" src="https://github.com/user-attachments/assets/a4e21426-b792-4a0d-9882-39e3c0c6cf3e" />
 </p>
 <br />
 
+
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Lastly, I will view event logs 
+  Go to windows menu type event viewer
+  Click on window log dropdown menu> Find > Type in user account you wish to observe.
+  This will show you logins, logouts, failure etc.
+You can do the same process by login in client-1 > go to the start menu > event viewer > right click and run as administrator.
+  This concludes the demonstration on group policies in Active directory 
+<img width="1921" height="1044" alt="image" src="https://github.com/user-attachments/assets/38e317e6-1f50-4dfe-bb7d-824b43eba704" />
 </p>
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
