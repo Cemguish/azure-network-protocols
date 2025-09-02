@@ -125,26 +125,23 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Resource group: Pick your existing one (e.g., MyResourceGroup) (Active-Directory).</li>
 <li>VM name: Choose a name (e.g., MyVM01) (client-1).</li>
 <li>Region: Same region as your VNet.(East US 2) </li>
-<li>Image: Choose the OS (Windows Server, Ubuntu, etc.).</li>
-<li>Size: Pick a VM size (e.g., B1s for free-tier).</li>
-<li>Authentication type: Choose Password or SSH key.</li>
-<li>Username/Password or SSH Key: Set login credentials.</li> 
+<li>Image: Choose the OS (Windows Server, Ubuntu, etc.)(Windows 10 Pro,Version 22H2 - x64 Gen2).</li>
+<li>Size: Pick a VM size (e.g., B1s for free-tier)(Standard_D2s_v3 -2 vcpus,8 GiB memory).</li>
+<li>Authentication type: Choose Password or SSH key.(Cyberlab123!)</li>
+<li>Username/Password or SSH Key: Set login credentials.(labuser)</li> 
+<li>Check Licensing box </li> 
 <li>Inbound ports: Select what to allow (e.g., RDP for Windows, SSH for Linux).</li>
 <li>Go to Networking:</li>
-<li>Select your Virtual network (e.g., MyVNet01).</li>
+<li>Select your Virtual network (e.g., MyVNet01)(Active-Directory-VNet).</li>
 <li>Choose an existing Subnet (e.g., MySubnet01).</li>
 <li>Leave defaults for Disks and Management (or customize if needed).</li>
 <li>Click Review + Create → Create.</li>
 <li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br />
 <img width="799" height="927" alt="AD8" src="https://github.com/user-attachments/assets/74145e2e-8664-4c7c-8f49-309e97bbf3dd" />
+<img width="1185" height="923" alt="AD9" src="https://github.com/user-attachments/assets/0a596991-7ddd-4ccd-a7f2-779500b15b4d" />
 </p><br />
 
-<p>
-Next go to Next: Disk > Next: Networking > 
-Make sure the Virtual network is set to your virtual network name you created previously.
-Then Review and create. When this is successfully deployed go back to virtual machine.
-  <img width="1185" height="923" alt="AD9" src="https://github.com/user-attachments/assets/0a596991-7ddd-4ccd-a7f2-779500b15b4d" />
-</p><br />
+
 
 <p>
   Now in virtual machine I will set the domain controller NIC IP address to static.
