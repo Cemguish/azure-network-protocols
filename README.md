@@ -34,17 +34,28 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
   <li>Step 5: Accept Terms & Conditions</li>
   <li>Step 6: Start Using Azure</li>
     </ul>
-<img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
+    <img width="1909" height="1001" alt="image" src="https://github.com/user-attachments/assets/cd545f5d-90e3-4ae4-88ec-01ce45b03b5b" />
 </p>
+<br>
 
-<p>     
-  Open Azure and create a resource group.
-  Name your resource group and select the appropriate region.
-  Preview and create.
+<p>  
+    <b>Open Azure and create a resource group.</b>
+  <ul>
+ <li>Log in to Azure Portal</li>
+<li>In the left-hand menu, click Resource groups.</li>
+<li>Click + Create.</li>
+<li>Fill in the details:</li>
+<li>Subscription: Choose your Azure subscription.</li>
+<li>Resource group name: Enter a unique name (e.g., MyResourceGroup1).</li>
+<li>Region: Select the region closest to where your resources will run (like East US, West Europe, etc.).</li>
+<li>Click Review + Create → then Create.</li>
+<li>Done ✅ You’ll see your resource group listed.</li>
+  <img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
+    <br>
 <img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
-
+    </ul>
 </p>
-<br />
+<br>
 
 <p>
 Next I will create a virtual network and create virtual network name. 
