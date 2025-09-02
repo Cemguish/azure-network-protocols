@@ -91,14 +91,15 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Subscription: Select your subscription ( Azure subscription1.)</li>
 <li>Resource group: Pick your existing one (e.g., MyResourceGroup) (Active-Directory).</li>
 <li>VM name: Choose a name (e.g., MyVM01) (dc-1).</li>
-<li>Region: Same region as your VNet.(East 2) </li>
-<li>Image: Choose the OS (Windows Server, Ubuntu, etc.).</li>
-<li>Size: Pick a VM size (e.g., B1s for free-tier).</li>
-<li>Authentication type: Choose Password or SSH key.</li>
-<li>Username/Password or SSH Key: Set login credentials.</li>
+<li>Region: Same region as your VNet.(East US 2) </li>
+<li>Image: Choose the OS (Windows Server, Ubuntu, etc.) (Windows Server 2022 Datacenter: Azure Edition).</li>
+<li>Size: Pick a VM size (e.g., B1s for free-tier)(Standard_D2s_v3 -2 vcpus,8 GiB memory).</li>
+<li>Authentication type: Choose Password or SSH key.(Cyberlab123!)</li>
+<li>Username/Password or SSH Key: Set login credentials.(labuser)</li> 
+<li>Check Licensing box </li> 
 <li>Inbound ports: Select what to allow (e.g., RDP for Windows, SSH for Linux).</li>
 <li>Go to Networking:</li>
-<li>Select your Virtual network (e.g., MyVNet01).</li>
+<li>Select your Virtual network (e.g., MyVNet01)(Active-Directory-VNet).</li>
 <li>Choose an existing Subnet (e.g., MySubnet01).</li>
 <li>Leave defaults for Disks and Management (or customize if needed).</li>
 <li>Click Review + Create → Create.</li>
@@ -107,19 +108,34 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <img width="1694" height="893" alt="AD4" src="https://github.com/user-attachments/assets/eea77dbb-eef4-4988-bdf4-b1cd51bc4e04" />
 <img width="1226" height="929" alt="AD5" src="https://github.com/user-attachments/assets/598af876-e6c9-4b60-a624-103d1d2c5520" />
 <img width="1224" height="925" alt="AD6" src="https://github.com/user-attachments/assets/7c06a9dd-5a74-4da1-a465-5e54dda73a7c" />
+<img width="1455" height="921" alt="AD7" src="https://github.com/user-attachments/assets/1b1cb2b0-7dcd-44ef-964e-98d9a8a02ca0" />
 </p>
 
-<p>
-Next go to Next: Disk > Next: Networking > 
-Make sure the Virtual network is set to your virtual network name you created previously.
-Then Review and create. 
-<img width="1455" height="921" alt="AD7" src="https://github.com/user-attachments/assets/1b1cb2b0-7dcd-44ef-964e-98d9a8a02ca0" />
-</p><br />
+<br />
 
 <p>
   Now go back and create another Virtual machine. 
    Fill in the necessary information like Resource group, Virtual machine name Client-1, Region, Availability zone, Image Windows 10 pro, Size, Username, Password.
   Check the licensing box then 
+
+  
+  <li>Click + Create → Azure virtual machine.</li>
+<li>Fill in the Basics tab:</li>
+<li>Subscription: Select your subscription ( Azure subscription1.)</li>
+<li>Resource group: Pick your existing one (e.g., MyResourceGroup) (Active-Directory).</li>
+<li>VM name: Choose a name (e.g., MyVM01) (client-1).</li>
+<li>Region: Same region as your VNet.(East US 2) </li>
+<li>Image: Choose the OS (Windows Server, Ubuntu, etc.).</li>
+<li>Size: Pick a VM size (e.g., B1s for free-tier).</li>
+<li>Authentication type: Choose Password or SSH key.</li>
+<li>Username/Password or SSH Key: Set login credentials.</li> 
+<li>Inbound ports: Select what to allow (e.g., RDP for Windows, SSH for Linux).</li>
+<li>Go to Networking:</li>
+<li>Select your Virtual network (e.g., MyVNet01).</li>
+<li>Choose an existing Subnet (e.g., MySubnet01).</li>
+<li>Leave defaults for Disks and Management (or customize if needed).</li>
+<li>Click Review + Create → Create.</li>
+<li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br />
 <img width="799" height="927" alt="AD8" src="https://github.com/user-attachments/assets/74145e2e-8664-4c7c-8f49-309e97bbf3dd" />
 </p><br />
 
