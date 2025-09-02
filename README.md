@@ -109,16 +109,11 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <img width="1226" height="929" alt="AD5" src="https://github.com/user-attachments/assets/598af876-e6c9-4b60-a624-103d1d2c5520" />
 <img width="1224" height="925" alt="AD6" src="https://github.com/user-attachments/assets/7c06a9dd-5a74-4da1-a465-5e54dda73a7c" />
 <img width="1455" height="921" alt="AD7" src="https://github.com/user-attachments/assets/1b1cb2b0-7dcd-44ef-964e-98d9a8a02ca0" />
-</p>
-
-<br />
+</p> <br />
 
 <p>
-  Now go back and create another Virtual machine. 
-   Fill in the necessary information like Resource group, Virtual machine name Client-1, Region, Availability zone, Image Windows 10 pro, Size, Username, Password.
-  Check the licensing box then 
-
-  
+  <b>Now go back and create another Virtual machine.</b> 
+    <ul>  
   <li>Click + Create → Azure virtual machine.</li>
 <li>Fill in the Basics tab:</li>
 <li>Subscription: Select your subscription ( Azure subscription1.)</li>
@@ -137,6 +132,7 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Leave defaults for Disks and Management (or customize if needed).</li>
 <li>Click Review + Create → Create.</li>
 <li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br />
+</ul>
 <img width="799" height="927" alt="AD8" src="https://github.com/user-attachments/assets/74145e2e-8664-4c7c-8f49-309e97bbf3dd" />
 <img width="1185" height="923" alt="AD9" src="https://github.com/user-attachments/assets/0a596991-7ddd-4ccd-a7f2-779500b15b4d" />
 </p><br />
@@ -144,72 +140,77 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 
 
 <p>
-  Now in virtual machine I will set the domain controller NIC IP address to static.
+  <b>Now in virtual machine I will set the domain controller NIC IP address to static.</b>
+     <ul>  
+  <li>Go to the VM in the Azure Portal </li>
+<li>In the left menu, under Settings, click Networking.</li>
+<li>Select the Network interface (it will have a name like MyVM01-nic) (Locate and copy the dc-1 private IP address).</li>
+<li>In the NIC blade, go to IP configurations.</li>
+<li>Click the IP configuration (usually named ipconfig1).</li>
+<li>Change Assignment from Dynamic → Static.</li>
+<li>Choose an available IP address (or keep the current one).</li>
+<li>Click Save.</li><br />
+       </ul>
 <img width="1888" height="864" alt="AD10" src="https://github.com/user-attachments/assets/295f7a0d-55ac-4ec4-b1ec-096e3305869c" />
-
-</p>
-
-<p>
-   Click on dc-1 > Networking > Network settings > Locate and copy the dc-1 private IP address. 
-  Now click on the Network interface/IP configuration box.
-  
-  <img width="1885" height="911" alt="AD12" src="https://github.com/user-attachments/assets/5e8b1386-048f-47a8-847a-1edbee62db3a" />
-</p><br />
-
-<p>
-  Navigate to and click on ipconfig1.
-  Go to Private IP address settings > Allocation.
-  Select Static and save. Now the address should be static
+<img width="1885" height="911" alt="AD12" src="https://github.com/user-attachments/assets/5e8b1386-048f-47a8-847a-1edbee62db3a" />
 <img width="1479" height="941" alt="AD13" src="https://github.com/user-attachments/assets/d145da61-1fad-4c82-9099-19d76864c4c4" />
-</p>
+</p><br />
 
 
 <p>
-Now I will log into the domain controller.
-Go back to azure virtual machine then copy dc-1 public IP address
+  <b>Now I will log into the domain controller.</b>
+  <li>Go back to azure virtual machine then copy dc-1 public IP address</li>
+  <li>Open remote desktop paste dc-1 public IP address and the password (Cyberlab123!) you created and login(labuser).</li>
+  <li>You should now be logged in to the Domain controller.</li><br />
 <img width="1909" height="779" alt="AD14" src="https://github.com/user-attachments/assets/8f8e2b35-c557-4e35-a7db-0d8eb68649e2" />
+<img width="667" height="826" alt="AD15" src="https://github.com/user-attachments/assets/69eafc09-b823-477d-8c17-5a652e63a884" />
+<img width="1907" height="959" alt="AD16" src="https://github.com/user-attachments/assets/174aca99-a275-4b89-b87c-a80edb39e940" />
 </p><br />
 
 
 
 <p>
-  Open remote desktop paste dc-1 public IP address and the password you created and login.
-  <img width="667" height="826" alt="AD15" src="https://github.com/user-attachments/assets/69eafc09-b823-477d-8c17-5a652e63a884" />
-</p><br />
+  <b>Side note to check to see if you are in the domain controller.</b>
+   <li>Right click on start menu > select system.</li>
+  <li>The about screen should popup.</li>
+   <li>Check windows specifications - Edition it should say "Windows Server 2022 Datacenter Azure Edition"</li>
+   <li>If you see this your are on the right path.</li>
+   <li>If you don't see it logout then login again.</li>
+   <li>Close window</li> 
+   <li>Once you confirm you are in the domain controller.</li>
+   <li>Right click the start menu > Run this should take you to the Firewall Defender menu.</li><br />
 
-<p>
-You should now be logged in to the Domain controller.
-  <img width="1907" height="959" alt="AD16" src="https://github.com/user-attachments/assets/174aca99-a275-4b89-b87c-a80edb39e940" />
-</p>
-<br />
 
-<p>
-Side note to check to see if you are in the domain controller.
-  Right click on start menu > select system.
-  The about screen should popup.
-  Check windows specifications - Edition it should say "Windows Server 2022 Datacenter Azure Edition"
-  If you see this your are on the right path.
-  If you don't see it logout then login again.
-  Close window 
-</p>
+  <b>Check if you are on the Domain Controller</b>
+  <dl>
+<dt>Right-click the Start menu → select System.</dt>
+ <dd>The About screen will appear.</dd>
+ <dd>Under Windows specifications – Edition, confirm it says: Windows Server 2022 Datacenter Azure Edition.</dd>
 
-<p>
-Once you confirm you are in the domain controller.
-  Right click the start menu > Run this should take you to the Firewall Defender menu.
+
+<dt>👉 Side Note:</dt>
+<dd>If you see this, you’re on the right path.</dd>
+<dd>If not, log out and log back in, then check again.</dd>
+<dd>Close the About window once confirmed.</dd>
   <img width="1808" height="1010" alt="AD18" src="https://github.com/user-attachments/assets/502ac808-c2ba-4c1b-bbb9-c726dfecd351" />
 </p><br />
 
-<p>
-  Once you are at the Firewall Defender menu. 
-  I will be turning off the firewall for the purpose of this project.
-<img width="1051" height="787" alt="image" src="https://github.com/user-attachments/assets/7b791be8-9f90-4b26-9858-e927aa684106" />
-</p><br />
+
 
 <p>
-Click on Windows Firewall Defender Properties.
-  Next go to firewall state turn it to off. 
-  Do this for the following tabs domain and the private profiles tab.
-  Apply then ok
+<b>Once you are in the correct domain controller you will be disabling the windows firewall.</b>
+<li>Go to Windows Defender Firewall menu, turn off the firewall.</li>
+<li>This is only for the purpose of this project.</li>
+ <li>Once you are at the Firewall Defender menu.</li>
+ <li>I will be turning off the firewall for the purpose of this project.</li>
+  <li>Click on Windows Firewall Defender Properties.</li>
+  <li>Next go to firewall state turn it to off.</li> 
+  <li>Do this for the following tabs domain and the private profiles tab.</li>
+  <li>Apply then ok</li><br>
+    <i>For the purpose of this project, we are disabling the firewall temporarily so that there are no network restrictions blocking communication between your server and other devices or services you will be setting up.</i>
+ <i>Normally, keeping the firewall on is a security best practice, but in this specific lab or project environment, turning it off will make configuration easier and prevent issues with connectivity.</i><br />
+ <img width="1808" height="1010" alt="AD18" src="https://github.com/user-attachments/assets/c20566bf-71a4-49fa-a7a8-73932cc9ad36" />
+  <img width="1051" height="787" alt="image" src="https://github.com/user-attachments/assets/7b791be8-9f90-4b26-9858-e927aa684106" />
   <img width="1051" height="787" alt="AD19" src="https://github.com/user-attachments/assets/68e382b2-e48b-40e4-9c3b-eded067b71b4" />
 </p><br />
 
