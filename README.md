@@ -216,18 +216,18 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 
 
 <p>
-  Now I will set client-1 DNS settings to dc-1 private IP address.
-  Go to azure and get dc-1 private IP address 
-  Copy it.
-  Go to click Networking > Networking settings > IP configuration Client-1 Network interface 
-
+  <b>Now I will set client-1 DNS settings to dc-1 private IP address.</b>
+  <li>Go to azure and get dc-1 private IP address</li> 
+  <li>Copy it.</li>
+  <li>Go to click Networking > Networking settings > IP configuration Client-1 Network interface</li> 
 <img width="1877" height="921" alt="AD20" src="https://github.com/user-attachments/assets/d2cf0cd7-48f7-45be-b571-a63e349a5354" />
 </p>
 
 
 
 <p>
-  Next go to DNS server > DNS server switch to custom then paste the IP address. Paste dc-1 private IP address and save.
+  <li>Next go to DNS server > DNS server switch to custom then paste the IP address.</li>
+  <li>Paste dc-1 private IP address and save.</li>
   <img width="1492" height="894" alt="AD21" src="https://github.com/user-attachments/assets/1d579c77-5e8b-4787-a5f3-347a222d3f94" />
 <img width="1493" height="867" alt="AD22" src="https://github.com/user-attachments/assets/0886ac62-ebf8-4c3b-97cf-a94b49df5e33" />
 </p><br />
