@@ -25,13 +25,20 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
   
 
 <h2>Deployment and Configuration Steps</h2>
-
 <p>
-  Open Azure and create a resource group.
+  <ul>
+  <li>Step 1: Go to the Azure Website https://azure.microsoft.com</li>
+  <li>Step 2: Click Start free</li>
+  <li> Step 3: Sign in / Create a Microsoft Account</li>
+  <li>Step 4: Verify Your Identity</li>
+  <li>Step 5: Accept Terms & Conditions</li>
+  <li>Step 6: Start Using Azure</li>
+    </ul>
 <img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
 </p>
 
-<p>
+<p>     
+  Open Azure and create a resource group.
   Name your resource group and select the appropriate region.
   Preview and create.
 <img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
