@@ -220,98 +220,76 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
   <li>Go to azure and get dc-1 private IP address</li> 
   <li>Copy it.</li>
   <li>Go to click Networking > Networking settings > IP configuration Client-1 Network interface</li> 
-<img width="1877" height="921" alt="AD20" src="https://github.com/user-attachments/assets/d2cf0cd7-48f7-45be-b571-a63e349a5354" />
-</p>
-
-
-
-<p>
   <li>Next go to DNS server > DNS server switch to custom then paste the IP address.</li>
-  <li>Paste dc-1 private IP address and save.</li>
+  <li>Paste dc-1 private IP address and save.</li><br>
+  <img width="1877" height="921" alt="AD20" src="https://github.com/user-attachments/assets/d2cf0cd7-48f7-45be-b571-a63e349a5354" />
   <img width="1492" height="894" alt="AD21" src="https://github.com/user-attachments/assets/1d579c77-5e8b-4787-a5f3-347a222d3f94" />
 <img width="1493" height="867" alt="AD22" src="https://github.com/user-attachments/assets/0886ac62-ebf8-4c3b-97cf-a94b49df5e33" />
 </p><br />
 
-<p>
-  Now from the azure portal I will restart Client-1.
-  Go back to virtual machine.
-  Check the Client-1 box and restart.
-<img width="1890" height="886" alt="AD23" src="https://github.com/user-attachments/assets/fd3665cf-4a11-4178-b1f4-5d9d3dce22c0" />
-</p><br />
 
 
 <p>
-  Now log into client-1 in azure
-  Copy the public IP address
-  Go to remote desktop
-  Paste client-1 public IP address 
-  User name: labuser and Cyberlab123!
+    <b>Now from the azure portal I will restart client-1.</b>
+    <li>Go back to virtual machine.</li>
+    <li>Check the client-1 box and restart.</li>
+    <li>Now log into client-1 in azure</li>
+    <li>Copy the public IP address</li>
+    <li>Go to remote desktop</li>
+    <li>Paste client-1 public IP address</li> 
+    <li>User name: labuser and Cyberlab123!</li><br>
+  <img width="1890" height="886" alt="AD23" src="https://github.com/user-attachments/assets/fd3665cf-4a11-4178-b1f4-5d9d3dce22c0" />
   <img width="988" height="870" alt="AD24" src="https://github.com/user-attachments/assets/a365d62c-a319-49f5-b887-1e0880a87b89" />
 </p><br />
 
 <p>
-  Now I will attempt to ping dc-1’s private IP address.
-  Go back to azure > virtual machine > click on dc-1 
-  Navigate to private IP address
-  Copy it 
-  Go back to Client-1 session and open powershell.
-<img width="1119" height="914" alt="AD25" src="https://github.com/user-attachments/assets/6691bd7e-23fe-4c30-940b-a991f9457481" />
-</p><br />
-
-
-
-<p>
-Open powershell Type ping and dc-1’s private IP address enter
-  It should ping.
+      <b>Now I will attempt to ping dc-1’s private IP address.</b>
+     <li>Go back to azure > virtual machine > click on dc-1</li> 
+     <li>Navigate to private IP address</li>
+     <li>Copy it</li> 
+     <li>Go back to client-1 session and open powershell.</li>
+     <li>Open powershell Type ping and dc-1’s private IP address enter</li>
+     <li>It should ping.</li>
+   <li>Open powershell Type ping and dc-1’s private IP address enter</li>
+     <li>It should ping.</li><br>
+  <img width="1119" height="914" alt="AD25" src="https://github.com/user-attachments/assets/6691bd7e-23fe-4c30-940b-a991f9457481" />
   <img width="913" height="779" alt="AD26" src="https://github.com/user-attachments/assets/577d3baa-a344-419e-a68e-73717427b41b" /> 
 </p><br />
 
 
 <p>
-  Now run ipconfig /all.
-  This completes setting up the infrastructure.
-<img width="982" height="862" alt="AD27" src="https://github.com/user-attachments/assets/4365bb36-399d-4793-95f9-57106ce0a498" />
-</p>
-
-<p>
-Next , I will install Active Directory.
-Go to azure copy the public IP address for dc-1.
+  <b>Now run ipconfig /all.</b>
+  <li>This completes setting up the infrastructure.</li>
+  <li>Next , I will install Active Directory.</li>
+  <li>Go to azure copy the public IP address for dc-1.</li>
+  <li>Open Remote desktop paste the dc-1 public IP address.</li><br>
+  <img width="982" height="862" alt="AD27" src="https://github.com/user-attachments/assets/4365bb36-399d-4793-95f9-57106ce0a498" />
 <img width="1869" height="625" alt="ADD1" src="https://github.com/user-attachments/assets/7ee77e09-e035-4507-b18f-1b525a349964" />
-</p><br />
-
-<p>
-  Open Remote desktop paste the dc-1 public IP address.
 <img width="802" height="935" alt="Add2" src="https://github.com/user-attachments/assets/c10e0d33-e3a6-4138-b477-34c00e045e50" />
 </p><br />
 
 
 <p>
-When you're in dc-1 go to the start menu and sroll up to server manager.
-  <img width="1853" height="1041" alt="Add3" src="https://github.com/user-attachments/assets/a8c5481d-7cfd-4d49-b444-71f482899493" />
-</p><br />
-
-<p>
-  Now I will set up active directory.
-  Go to add roles and features.
-  Click next to all.
-<img width="1911" height="1030" alt="Add4" src="https://github.com/user-attachments/assets/300c4071-cc9e-435d-99d6-17751d255917" />
-</p>
-
-<p>
-  When you get to Select server role check the Active directory services box.
-  Click Add features button.
-  Then next check the Restart if destination server automatically if required box and install.
-  After the install close
+  <b>When you're in dc-1 go to the start menu and scroll up to server manager.</b>
+    <li>Now I will set up active directory.</li>
+    <li>Go to add roles and features.</li>
+    <li>Click next to all.</li>
+    <li>When you get to Select server role check the Active directory services box.</li>
+    <li>Click Add features button.</li>
+    <li>Next check the restart if destination server automatically if required box and install.</li>
+    <li>After the install close</li><br />
+    <img width="1853" height="1041" alt="Add3" src="https://github.com/user-attachments/assets/a8c5481d-7cfd-4d49-b444-71f482899493" />
+  <img width="1911" height="1030" alt="Add4" src="https://github.com/user-attachments/assets/300c4071-cc9e-435d-99d6-17751d255917" />
 <img width="1916" height="1038" alt="add6" src="https://github.com/user-attachments/assets/ed92c5c1-4ab3-488e-971d-5d571c719719" />
 </p><br />
 
 
 <p>
-  Now I will promote dc-1 as an active domain controller: Also known as a forest.
-  Go back to the domain controller dc-1.
-  Navigate to the right locate the flag 
-  Click on the flag 
-  Click on Promote this server to a domain controller.
+   <b>Now I will promote dc-1 as an active domain controller: Also known as a forest.</b>
+     <li>Go back to the domain controller dc-1.</li>
+     <li>Navigate to the right locate the flag</li> 
+     <li>Click on the flag</li>
+     <li>Click on Promote this server to a domain controller.</li><br />
 <img width="1911" height="1030" alt="Add4" src="https://github.com/user-attachments/assets/300c4071-cc9e-435d-99d6-17751d255917" />
 </p>
 
@@ -325,44 +303,45 @@ When you're in dc-1 go to the start menu and sroll up to server manager.
   <li>Then install at prerequisites check screen.</li>
   <li>After installation the session window automatically restart.</li>
   <li>Now The server was successfully configured as a domain controller.</li>
-</p><br />
+  <li>Next log into dc-1 as a domain user.</li>
+  <li>User name should be (mydomain.com\labuser) for example or whatever you user name you used and your password.</li>
+  <li>Now login</li><br />
 <img width="1935" height="1043" alt="Add7" src="https://github.com/user-attachments/assets/292e6d21-36ab-47d9-8fe7-4ed62ffdc395" />
-</ul><br />
-
-
-
-
-<p>
-  Next log into dc-1 as a domain user.
-  User name should be (mydomain.com\labuser) for example or whatever you user name you used and your password.
-  Now login
 <img width="1274" height="1015" alt="Add8" src="https://github.com/user-attachments/assets/4a453382-5999-4f15-bdcd-8d21419e5d0b" />
-</p>
+    </p>
+</ul><br>
 
 
 
 <p>
-Now I will Create a Domain Admin user within the domain.
-Open Active Directory users and computers and create an organizational unit called _EMPLOYEES.
-Go to start click Administrative Tools > Active Directory users and computers 
-I will create organizational unit called _EMPLOYEES.
-Click mydomain.com dropdown menu > users > Right click on mydomain.com > New organizational unit > Name _EMPLOYEES > Then click ok
-Now I will create another one called _ADMIN 
-Duplicate previous steps.
-  When completed I will create a new  user/employee.
+<b>Now I will Create a Domain Admin user within the domain.</b>
+<li>Open Active Directory users and computers and create an organizational unit called _EMPLOYEES.</li>
+<li>Go to start click Administrative Tools > Active Directory users and computers</li> 
+<li>I will create organizational unit called _EMPLOYEES.</li>
+<li>Click mydomain.com dropdown menu</li> 
+  <li>users</li> 
+  <li>Right click on mydomain.com</li> 
+  <li>New organizational unit</li> 
+  <li>Name _EMPLOYEES</li> 
+  <li>Then click ok</li>
+<li>Now I will create another one called _ADMIN</li>
+<li>Duplicate previous steps.</li>
+  <li>When completed I will create a new  user/employee.</li><br />
   <img width="1694" height="954" alt="Add9" src="https://github.com/user-attachments/assets/ae4c0156-8093-4ce7-8791-fdf33407de31" />
 </p>
 <br />
 
 
 <p>
-Now I will create a new  user/employee. 
-Go to admins folder right click >  new > User. 
-Fill in the necessary fields. 
-Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!.
-Optional, Uncheck user must change password at next logon.
-For this project I wil check the password never expires.
-Hit next and finish.
+<b>Now I will create a new  user/employee.</b> 
+<li>Go to admins folder right click</li> 
+  <li>New</li> 
+  <li>User</li> 
+<li>Fill in the necessary fields.</li> 
+<li>Create a new employee for example named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!.</li>
+<li>Optional, Uncheck user must change password at next logon.</li>
+<li>For this project I wil check the password never expires.</li>
+<li>Hit next and finish.</li><br />
 <img width="1671" height="954" alt="Add11" src="https://github.com/user-attachments/assets/7cb51008-8b2b-4e1d-9e49-c44f09b1b77e" />
 </p>
 
@@ -371,11 +350,18 @@ Hit next and finish.
 
 
 <p>
-Now I will add jane_admin to the “Domain Admins” Security Group
-Right click jane doe > Properties > Member of Tab > Add 
-Type in the object name to select box. 
-Domain Admins > Click check names box > Click ok > Apply > Ok
-Now account is an actual domain admin.
+<b>Now I will add jane_admin to the “Domain Admins” Security Group</b> 
+<li>Right click jane doe</li>  
+  <li>Properties</li>   
+  <li>Member of Tab</li>  
+  <li>Add</li>  
+<li>Type in the object name to select box.</li>  
+<li>Domain Admins</li>  
+  <li>Click check names box</li>  
+  <li>Click ok</li>  
+  <li>Apply</li>  
+  <li>Ok</li> 
+<li>Now account is an actual domain admin.</li><br />
 <img width="1653" height="944" alt="Add12" src="https://github.com/user-attachments/assets/b4c12836-1074-4c22-ad80-fbed6a7e6539" />
 </p><br />
 
@@ -384,26 +370,29 @@ Now account is an actual domain admin.
 
 
 <p>
-  Now logout an close the dc-1 connection.
-  Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
-  To log out right click > Run > Type logoff > Enter
-  Next, log back into dc-1 as jane admin.
-  Go to azure get dc-1 public IP address and log in again.
-  I will be using this account from this point on.
+  <b>Now logout an close the dc-1 connection.</b>
+  <li>Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”</li>  
+  <li>To log out right click</li>  
+    <li>Run</li>    
+    <li>Type logoff</li>   
+    <li>Enter</li>  
+  <li>Next, log back into dc-1 as jane admin.</li>  
+  <li>Go to azure get dc-1 public IP address and log in again.</li>  
+  <li>I will be using this account from this point on.</li><br /> 
 <img width="1281" height="1033" alt="Add13" src="https://github.com/user-attachments/assets/073da3d6-b9a9-4cd9-8f4c-245d90971071" />
 
 </p>
 
 
 <p>
- Now I will login to client-1 
-  Go back to azure get client-1 public IP address
-  Go to remote desktop.
-  Once logged in Right click on start menu > System > Rename this PC Advanced.
-  Under the computer tab > change > in this box I will join this to the domain. Type in mydomain.com > click ok 
-  At the Computer Name > Domain Changes pop up in put User name and password click ok. 
-  The pop up will give a prop to restart.
-  When it comes back up it will be a member of the domain
+  <b>Now I will login to client-1</b> 
+    <li>Go back to azure get client-1 public IP address</li> 
+    <li>Go to remote desktop.</li> 
+    <li>Once logged in Right click on start menu > System > Rename this PC Advanced.</li> 
+    <li>Under the computer tab > change > In this box I will join this to the domain. Type in mydomain.com > click ok</li>  
+    <li>At the Computer Name > Domain Changes pop up in put User name and password click ok.</li>  
+    <li>The pop up will give a prop to restart.</li> 
+    <li>When it comes back up it will be a member of the domain</li><br />  
   <img width="1327" height="1020" alt="Add14" src="https://github.com/user-attachments/assets/7621f5e1-e32a-4c39-86fc-3b16ac06d466" />
   <img width="1411" height="1016" alt="Add15" src="https://github.com/user-attachments/assets/03177c91-fb0c-4def-88ec-405d2468e8f2" />
 </p><br />
