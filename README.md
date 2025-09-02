@@ -82,11 +82,11 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <br>
 
 <p>
- <b> Now I will create the Domain controller.</b> 
- Go to virtual machines 
-  Create new virtual machine
-  <ul>
-  <li>Click + Create → Azure virtual machine.</li>
+ <b>Now I will create the Domain controller.</b><br>
+ Go to virtual machine and create a virtual machine.
+
+  <ul>   
+<li>Click + Create → Azure virtual machine.</li>
 <li>Fill in the Basics tab:</li>
 <li>Subscription: Select your subscription ( Azure subscription1.)</li>
 <li>Resource group: Pick your existing one (e.g., MyResourceGroup) (Active-Directory).</li>
@@ -102,15 +102,9 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Choose an existing Subnet (e.g., MySubnet01).</li>
 <li>Leave defaults for Disks and Management (or customize if needed).</li>
 <li>Click Review + Create → Create.</li>
-<li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li>
+<li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br />
      </ul>
 <img width="1694" height="893" alt="AD4" src="https://github.com/user-attachments/assets/eea77dbb-eef4-4988-bdf4-b1cd51bc4e04" />
-</p>
-<br />
-
-<p>
-  Fill in the necessary information like Resource group, Virtual machine name, Region, Availability zone, Image, Size, Username, Password.
-  Check the licensing box then 
 <img width="1226" height="929" alt="AD5" src="https://github.com/user-attachments/assets/598af876-e6c9-4b60-a624-103d1d2c5520" />
 <img width="1224" height="925" alt="AD6" src="https://github.com/user-attachments/assets/7c06a9dd-5a74-4da1-a465-5e54dda73a7c" />
 </p>
