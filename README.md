@@ -3,7 +3,7 @@
 </p>
 
 <h1>Deploying and Managing Active Directory in Azure with PowerShell & Group Policy</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+Demonstration on how to implement Active Directory within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Create one virtual machine running windows server this is going to be our domain controller.
 - Create another virtual machine running windows 10 this will be the client that will join the domain.
 - Set up dns IP address in client NIC to same address as the Domain controller.
-- 
+  
 
 <h2>Deployment and Configuration Steps</h2>
 
