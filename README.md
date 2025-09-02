@@ -46,29 +46,64 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Click + Create.</li>
 <li>Fill in the details:</li>
 <li>Subscription: Choose your Azure subscription.</li>
-<li>Resource group name: Enter a unique name (e.g., MyResourceGroup1).</li>
-<li>Region: Select the region closest to where your resources will run (like East US, West Europe, etc.).</li>
+<li>Resource group name: Enter a unique name (Active-Directory).</li>
+<li>Region: Select the region closest to where your resources will run (like East US2).</li>
 <li>Click Review + Create → then Create.</li>
-<li>Done ✅ You’ll see your resource group listed.</li>
+<li>Done ✅ You’ll see your resource group listed.</li>    <br>
   <img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
-    <br>
-<img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
     </ul>
+</p>
+
+
+
+<br>
+
+<p>
+  <img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
+ <b>Next I will create a virtual network and create virtual network name.</b> 
+  <ul>
+<li>In the left menu, search for Virtual networks and click it.</li>
+<li>Click + Create.</li>
+<li>Fill in the Basics tab:</li>
+<li>Subscription: Select your subscription.</li>
+<li>Resource group: Choose an existing one or create a new resource group.</li>
+<li>Name: Enter a name (e.g., MyVNet01).</li>
+<li>Region: Choose a region (should match where you’ll deploy resources).</li>
+<li>Move to the IP Addresses tab:</li>
+<li>Define the Address space (default is 10.0.0.0/16).</li>
+<li>Add at least one subnet (default is 10.0.0.0/24).</li>
+<li>(Optional) Configure Security (like DDoS protection, Firewall, etc.).</li>
+<li>Click Review + Create → then Create.</li>  <br>
+<img width="1490" height="889" alt="AD3" src="https://github.com/user-attachments/assets/7f3b0e98-5db9-4435-a4be-ce723b991dad" />
+    
+ </ul>
+
 </p>
 <br>
 
 <p>
-Next I will create a virtual network and create virtual network name. 
-Review and Create
-<img width="1490" height="889" alt="AD3" src="https://github.com/user-attachments/assets/7f3b0e98-5db9-4435-a4be-ce723b991dad" />
-
-
-
-</p>
-<p>
-  Now I will create the Domain controller.
-  Go to virtual machines 
+ <b> Now I will create the Domain controller.</b> 
+ Go to virtual machines 
   Create new virtual machine
+  <ul>
+  <li>Click + Create → Azure virtual machine.</li>
+<li>Fill in the Basics tab:</li>
+<li>Subscription: Select your subscription ( Azure subscription1.)</li>
+<li>Resource group: Pick your existing one (e.g., MyResourceGroup) (Active-Directory).</li>
+<li>VM name: Choose a name (e.g., MyVM01) (dc-1).</li>
+<li>Region: Same region as your VNet.(East 2) </li>
+<li>Image: Choose the OS (Windows Server, Ubuntu, etc.).</li>
+<li>Size: Pick a VM size (e.g., B1s for free-tier).</li>
+<li>Authentication type: Choose Password or SSH key.</li>
+<li>Username/Password or SSH Key: Set login credentials.</li>
+<li>Inbound ports: Select what to allow (e.g., RDP for Windows, SSH for Linux).</li>
+<li>Go to Networking:</li>
+<li>Select your Virtual network (e.g., MyVNet01).</li>
+<li>Choose an existing Subnet (e.g., MySubnet01).</li>
+<li>Leave defaults for Disks and Management (or customize if needed).</li>
+<li>Click Review + Create → Create.</li>
+<li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li>
+     </ul>
 <img width="1694" height="893" alt="AD4" src="https://github.com/user-attachments/assets/eea77dbb-eef4-4988-bdf4-b1cd51bc4e04" />
 </p>
 <br />
