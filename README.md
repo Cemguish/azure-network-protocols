@@ -49,7 +49,7 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Resource group name: Enter a unique name (Active-Directory).</li>
 <li>Region: Select the region closest to where your resources will run (like East US2).</li>
 <li>Click Review + Create → then Create.</li>
-<li>Done ✅ You’ll see your resource group listed.</li>    <br>
+<li>Done, You’ll see your resource group listed.</li><br>
   <img width="1254" height="918" alt="AD1" src="https://github.com/user-attachments/assets/dec71678-1149-45d2-864e-1ceb39bd57ae" />
     </ul>
 </p>
