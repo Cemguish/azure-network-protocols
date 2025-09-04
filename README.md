@@ -24,7 +24,7 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 - Set up dns IP address in client NIC to same address as the Domain controller.
   
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Steps to Download Azure</h2>
 <p>
   <ul>
   <li>Step 1: Go to the Azure Website https://azure.microsoft.com</li>
@@ -35,8 +35,9 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
   <li>Step 6: Start Using Azure</li>
     </ul>
     <img width="1909" height="1001" alt="image" src="https://github.com/user-attachments/assets/cd545f5d-90e3-4ae4-88ec-01ce45b03b5b" />
-</p>
-<br>
+</p><br>
+
+
 
 <p>  
     <b>Open Azure and create a resource group.</b>
@@ -59,8 +60,8 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <br>
 
 <p>
-  <img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
- <b>Next I will create a virtual network and create virtual network name.</b> 
+
+ <b>Next, create a virtual network and assign it a name.</b> 
   <ul>
 <li>In the left menu, search for Virtual networks and click it.</li>
 <li>Click + Create.</li>
@@ -73,7 +74,8 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Define the Address space (default is 10.0.0.0/16).</li>
 <li>Add at least one subnet (default is 10.0.0.0/24).</li>
 <li>(Optional) Configure Security (like DDoS protection, Firewall, etc.).</li>
-<li>Click Review + Create → then Create.</li>  <br>
+<li>Click Review + Create → then Create.</li><br>
+<img width="1346" height="797" alt="AD2" src="https://github.com/user-attachments/assets/a7a4fa7f-e1c2-43b4-b85d-6c3967635c5f" />
 <img width="1490" height="889" alt="AD3" src="https://github.com/user-attachments/assets/7f3b0e98-5db9-4435-a4be-ce723b991dad" />
     
  </ul>
@@ -82,9 +84,8 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <br>
 
 <p>
- <b>Now I will create the Domain controller.</b><br>
- Go to virtual machine and create a virtual machine.
-
+ <b>Now I will create the Domain controller. Go to virtual machine and create a virtual machine.</b><br>
+ 
   <ul>   
 <li>Click + Create → Azure virtual machine.</li>
 <li>Fill in the Basics tab:</li>
