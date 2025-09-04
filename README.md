@@ -104,7 +104,7 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
 <li>Choose an existing Subnet (e.g., MySubnet01).</li>
 <li>Leave defaults for Disks and Management (or customize if needed).</li>
 <li>Click Review + Create → Create.</li>
-<li>✅ After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br>
+<li>After deployment, you can connect via SSH (Linux) or RDP (Windows).</li><br>
      </ul>
 <img width="1694" height="893" alt="AD4" src="https://github.com/user-attachments/assets/eea77dbb-eef4-4988-bdf4-b1cd51bc4e04" />
 <img width="1226" height="929" alt="AD5" src="https://github.com/user-attachments/assets/598af876-e6c9-4b60-a624-103d1d2c5520" />
@@ -189,7 +189,7 @@ Demonstration on how to implement Active Directory within Azure Virtual Machines
  <dd>Under Windows specifications – Edition, confirm it says: Windows Server 2022 Datacenter Azure Edition.</dd>
 
 
-<dt>👉 Side Note:</dt>
+<dt>Side Note:</dt>
 <dd>If you see this, you’re on the right path.</dd>
 <dd>If not, log out and log back in, then check again.</dd>
 <dd>Close the About window once confirmed.</dd>
